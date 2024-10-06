@@ -1,4 +1,5 @@
-print("kick asss")
+
 print("lets try somthing differnt")
-sam = 200000
+sam = 20000
 print(sam)
+print("hey world")
