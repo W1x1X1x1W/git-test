@@ -10,7 +10,7 @@ for p in doc.paragraphs:
 
 
 for table in doc.tables:
-    print("new table")
+    print("\n new table")
     for row in table.rows :
         print("|".join(cell.text for cell in row.cells))
 
