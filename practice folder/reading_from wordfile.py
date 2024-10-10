@@ -12,3 +12,11 @@ for table in doc.tables:
     print("new table")
     for row in table.rows :
         print("|".join(cell.text for cell in row.cells))
+
+
+all_text = ""
+for h in doc.paragraphs:
+    all_text += f"{h.text} \n"
+
+print(all_text)
+
