@@ -1,7 +1,8 @@
 from docx.api import Document
+from docx.shared import Pt
 
 
-doc = Document("test1.docx")
+doc = Document("reading.docx")
 
 for p in doc.paragraphs:
     if p.style.name.startswith("Heading") or p.style.name == "Title":
@@ -19,4 +20,13 @@ for h in doc.paragraphs:
     all_text += f"{h.text} \n"
 
 print(all_text)
+
+read_just_16pt = ""
+for m in doc.paragraphs:
+        run = m.runs
+        if run.font.size == Pt(16):
+            read_just_16pt += f"{m.text} \n"
+
+print(read_just_16pt)
+
 
