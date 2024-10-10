@@ -35,22 +35,22 @@ p2.font.size = Pt(72)
 p2.font.name = "MS Gothic"
 
 '''creating a table and putting information on it'''
-head_informations = ['Name', 'age', 'work']
+head_informations = ["Name", "age", "work"]
 some_informations = [
-    ['mohammad',22,'coach'],
-    ['bashar',44,'teacher'],
-    ['ahmed',20,'player']
-
+     ["mohammad",22,"coach"],
+    ["bashar",44,"teacher"],
+    ["ahmed",20,"player"],
+    ["bob",80,"job"]
 ]
-table = doc.add_table(rows=1,cols=3)
+table = doc.add_table(rows=1, cols=3, style=doc.styles['OR'])
 for i in range(3):
     table.rows[0].cells[i].text = head_informations[i]
 
 for name,age,work in some_informations:
     cell = table.add_row().cells
-    cell[0] = name
-    cell[1] = str(age)
-    cell[2] = work
+    cell[0].text = name
+    cell[1].text = str(age)
+    cell[2].text = work
 
 
 
