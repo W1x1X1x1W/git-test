@@ -34,6 +34,26 @@ p2 = paragraph2.add_run("this is the third paragraph!!!")
 p2.font.size = Pt(72)
 p2.font.name = "MS Gothic"
 
+'''creating a table and putting information on it'''
+head_informations = ['Name', 'age', 'work']
+some_informations = [
+    ['mohammad',22,'coach'],
+    ['bashar',44,'teacher'],
+    ['ahmed',20,'player']
+
+]
+table = doc.add_table(rows=1,cols=3)
+for i in range(3):
+    table.rows[0].cells[i].text = head_informations[i]
+
+for name,age,work in some_informations:
+    cell = table.add_row().cells
+    cell[0] = name
+    cell[1] = str(age)
+    cell[2] = work
+
+
+
 
 
 doc.save("writing.docx")
