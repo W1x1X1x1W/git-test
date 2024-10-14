@@ -40,9 +40,11 @@ wb = Workbook()
 ws = wb.active
 ws.title = 'Grades'
 
-heading = ['Name'] = list(data["Jane"].keys())
-print(heading)
-
+heading1 = ["Name"] + list(data["Jane"].keys())
+ws.append(heading1)
+for person in data.keys():
+    grades = list(data[person].values())
+    ws.append([person] + grades)
 
 
 
