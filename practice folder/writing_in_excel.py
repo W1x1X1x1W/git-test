@@ -14,6 +14,8 @@ ws.delete_rows(2)
 ws.insert_cols(2)
 ws.delete_cols(2)
 
+ws.move_range("A1:C3", rows = 3, cols = 5)
+
 
 
 
