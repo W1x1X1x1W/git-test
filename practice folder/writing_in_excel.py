@@ -1,6 +1,6 @@
 from openpyxl import Workbook, load_workbook
 from openpyxl.utils import get_column_letter
-wb = load_workbook('excelFile_new.xlsx')
+wb = Workbook()
 ws = wb.active
 ws.title = 'sh1'
 
@@ -9,7 +9,7 @@ for row in range(1,7):
         char = get_column_letter(col)
         ws[char + str(row)].value = char + str(row)
 
-ws.merge_cells("A1:D1")
+ws.merge_cells("A1:C1")
 
 
 
