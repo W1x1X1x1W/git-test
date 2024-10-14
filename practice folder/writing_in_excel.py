@@ -9,8 +9,11 @@ for row in range(1,7):
         char = get_column_letter(col)
         ws[char + str(row)].value = char + str(row)
 
-ws.merge_cells("A1:C1")
-ws.unmerge_cells("A1:C1")
+ws.insert_rows(2)
+ws.insert_rows(2)
+
+
+
 
 
 
