@@ -11,6 +11,8 @@ for row in range(1,7):
 
 ws.insert_rows(2)
 ws.delete_rows(2)
+ws.insert_cols(2)
+ws.delete_cols(2)
 
 
 
