@@ -45,6 +45,10 @@ ws.append(heading1)
 for person in data.keys():
     grades = list(data[person].values())
     ws.append([person] + grades)
+for col in range(2, len(data['Joe']) + 2):
+    char = get_column_letter(col)
+    ws[char + "7"] = f"=sum({char + '2'}:{char + '6'})/{len(data)}"
+    
 
 
 
