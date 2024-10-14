@@ -1,7 +1,9 @@
-from openpyxl import workbook, load_workbook
-wb = load_workbook('C:/Users/DELL/Desktop/git-test/practice folder/excelFile_new.xlsx')
-ws = wb["s1"]
-wb.create_sheet("s2")
+from openpyxl import Workbook, load_workbook
+wb = Workbook()
+ws = wb.active
+
+list1 = ['name','job','age']
+ws.append(list1)
 
 
 
