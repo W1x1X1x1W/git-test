@@ -1,10 +1,8 @@
 from openpyxl import workbook, load_workbook
-wb = load_workbook('C:/Users/DELL/Desktop/h.xlsx')
-ws = wb.active
-print(wb.sheetnames)
+wb = load_workbook('C:/Users/DELL/Desktop/git-test/practice folder/excelFile_new.xlsx')
+ws = wb["s1"]
 
-ws['A1'].value = 'Names'
-print('he')
+
 
 
 
