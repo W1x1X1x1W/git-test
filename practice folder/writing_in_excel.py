@@ -1,6 +1,6 @@
 from openpyxl import Workbook, load_workbook
 from openpyxl.utils import get_column_letter
-from openpyxl.styles import fonts
+from openpyxl.styles import Font
 
 
 data = {
@@ -48,7 +48,10 @@ for person in data.keys():
 for col in range(2, len(data['Joe']) + 2):
     char = get_column_letter(col)
     ws[char + "7"] = f"=sum({char + '2'}:{char + '6'})/{len(data)}"
-    
+
+for col1 in range(1, 6):
+    ws[get_column_letter(col1) + '1'].font = Font(bold=True, color='FF000000')
+
 
 
 
