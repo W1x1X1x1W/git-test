@@ -10,6 +10,7 @@ for row in range(1,7):
         ws[char + str(row)].value = char + str(row)
 
 ws.merge_cells("A1:C1")
+ws.unmerge_cells("A1:C1")
 
 
 
