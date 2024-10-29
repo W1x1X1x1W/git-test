@@ -1,0 +1,19 @@
+
+
+# our first respond
+{
+  "happy_days": {
+    "Monday": "sunny",
+    "Tuesday": "cloudy",
+    "Wednesday": "breezy",
+    "Thursday": "rainy",
+    "Friday": "stormy",
+    "Saturday": "foggy",
+    "Sunday": "clear"
+  }
+}
+ChatCompletion(id='chatcmpl-ANcavpmgyZDjFmMf3QfbsggMFRkTH', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='\n\n\n{\n  "happy_days": {\n    "Monday": "sunny",\n    "Tuesday": "cloudy",\n    "Wednesday": "breezy",\n    "Thursday": "rainy",\n    "Friday": "stormy",\n    "Saturday": "foggy",\n    "Sunday": "clear"\n  }\n}', refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None))], created=1730193265, model='gpt-4o-2024-08-06', object='chat.completion', service_tier=None, system_fingerprint='fp_90354628f2', usage=CompletionUsage(completion_tokens=69, prompt_tokens=65, total_tokens=134, completion_tokens_details=CompletionTokensDetails(audio_tokens=None, reasoning_tokens=0), prompt_tokens_details=PromptTokensDetails(audio_tokens=None, cached_tokens=0)))
+
+
+
+#
